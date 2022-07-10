@@ -1,2 +1,26 @@
-# project-shangpinghui
-企业级尚品汇前端项目，实现登录，注册，路由跳转，数据请求等操作
+# app
+
+## Project setup
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+```
+yarn run serve
+```
+
+### Compiles and minifies for production
+```
+yarn run build
+```
+
+### Run your tests
+```
+yarn run test
+```
+
+### Lints and fixes files
+```
+yarn run lint
+```
