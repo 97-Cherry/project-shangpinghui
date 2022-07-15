@@ -36,7 +36,7 @@ let router = new VueRouter({
   mode: 'history',
   routes,
   // 滚动行为，0表示滚动条
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior() {
     // return 期望滚动到哪个的位置
     // 在每一次进入页面的时候，默认页面的展示是从头部开始展示，不会默认为是之前浏览器浏览下的位置处停留
     return { y: 0 }
@@ -51,8 +51,8 @@ router.beforeEach(async (to, from, next) => {
   // from获取到要从哪个路由进行跳转过来的信息
   // next :next()表示放行
   //获取仓库中的token值，可以用来确定当前的用户是否登录，进行登录之后，数据刷新就不在实现
-  // next();
-//   // console.log(store)
+  next();
+  // console.log(store)
   let token = store.state.usercode.token;
   let name=store.state.usercode.userInfo.name
   // console.log(name);
